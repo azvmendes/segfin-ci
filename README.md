@@ -1,8 +1,8 @@
 # Segfin CI - DevSecOps Pipeline
 
 Este repositório orquestra o pipeline seguro de CI/CD para os projetos:
-- Frontend: [segfin-frontend-vulnerable](https://github.com/azvmendes/segfin-frontend-secure)
-- Backend: [segfin-backend-vulnerable](https://github.com/azvmendes/segfin-backend-secure)
+- Frontend: [segfin-frontend-secure](https://github.com/azvmendes/segfin-frontend-secure)
+- Backend: [segfin-backend-secure](https://github.com/azvmendes/segfin-backend-secure)
 
 Inclui:
 - SAST, SCA, SBOM
