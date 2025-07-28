@@ -7,8 +7,8 @@ pipeline {
   stages {
     stage('Clone Repos') {
       steps {
-        sh 'git clone https://github.com/azvmendes/segfin-frontend-vulnerable frontend'
-        sh 'git clone https://github.com/azvmendes/segfin-backend-vulnerable backend'
+        sh 'git clone https://github.com/azvmendes/segfin-frontend-secure frontend'
+        sh 'git clone https://github.com/azvmendes/segfin-backend-secure backend'
       }
     }
 
