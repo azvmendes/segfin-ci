@@ -24,7 +24,7 @@ RUN curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/
 RUN curl -sfL https://raw.githubusercontent.com/Bearer/bearer/main/install.sh | bash -s -- -b /usr/local/bin
 
 # Checkov
-RUN pip install checkov
+RUN pip install checkov --break-system-packages
 
 # Cosign
 RUN curl -sSL https://github.com/sigstore/cosign/releases/latest/download/cosign-linux-amd64 -o /usr/local/bin/cosign && \
