@@ -31,6 +31,6 @@ RUN curl -sSL https://github.com/sigstore/cosign/releases/latest/download/cosign
     chmod +x /usr/local/bin/cosign
 
 # OWASP ZAP CLI
-RUN pip install python-owasp-zap-v2.4
+RUN pip install python-owasp-zap-v2.4 --break-system-packages
 
 USER jenkins
