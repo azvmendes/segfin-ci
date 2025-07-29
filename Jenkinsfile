@@ -74,9 +74,10 @@ pipeline {
     }
   }
 
-  post {
-    always {
-      archiveArtifacts artifacts: '**/*.json, **/*.html', allowEmptyArchive: true
-    }
+  }
+post {
+  always {
+    archiveArtifacts artifacts: '**/*.json, **/*.html', allowEmptyArchive: true
   }
 }
+
