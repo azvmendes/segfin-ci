@@ -1,5 +1,11 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'jenkins-devsecops-agent'
+      args '-v /var/run/docker.sock:/var/run/docker.sock'
+    }
+  }
+
   environment {
     COSIGN_PASSWORD = credentials('cosign-pass')
   }
